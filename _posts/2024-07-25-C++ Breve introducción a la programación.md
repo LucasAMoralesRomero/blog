@@ -19,7 +19,7 @@ Al ingresar a la web, iniciaremos la descarga del entorno de desarrollo y, una v
 Una vez que se inicie, marcaremos la casilla de desarrollo para escritorio con C++, como se ve en la siguiente imagen:
 
 
-![Instalación del entorno de desarrollo]({{ site.url }}{{site.baseurl }}/resources/cpp-clase-1/instalador.png)
+![Instalación del entorno de desarrollo]({{site.baseurl }}/resources/cpp-clase-1/instalador.png)
 
 
 Luego, pulsaremos en instalar y dejaremos al instalador hacer su trabajo, esto va a demorar un rato por lo que es recomendable dejar la PC libre (aprovecha el tiempo para tomar una buena taza de café)
