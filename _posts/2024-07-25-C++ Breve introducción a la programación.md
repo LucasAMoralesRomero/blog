@@ -25,24 +25,24 @@ Una vez que se inicie, marcaremos la casilla de desarrollo para escritorio con C
 Luego, pulsaremos en instalar y dejaremos al instalador hacer su trabajo, esto va a demorar un rato por lo que es recomendable dejar la PC libre (aprovecha el tiempo para tomar una buena taza de café)
 
 
-![Instalación en progreso]({{ site.url }}{{site.baseurl }}/resources/cpp-clase-1/instalador-en-progreso.png)
+![Instalación en progreso]({{site.baseurl }}/resources/cpp-clase-1/instalador-en-progreso.png)
 
 
 #### Nuestro primer programa en C++
 Una vez que el instalador haya finalizado, es hora de que escribamos nuestro primer programa en C++, el famoso "Hola Mundo!", para eso vamos a abrir Visual Studio y seleccionaremos Crear un nuevo proyecto.
 
 
-![Seleccionamos un nuevo proyecto]({{ site.url }}{{site.baseurl }}/resources/cpp-clase-1/nuevo-proyecto.jpg)
+![Seleccionamos un nuevo proyecto]({{site.baseurl }}/resources/cpp-clase-1/nuevo-proyecto.jpg)
 
 
 Luego, selecciona aplicación de consola y presiona en siguiente.
 
 
-![Seleccionamos proyecto de consola]({{ site.url }}{{site.baseurl }}/resources/cpp-clase-1/plantilla-consola.jpg)
+![Seleccionamos proyecto de consola]({{site.baseurl }}/resources/cpp-clase-1/plantilla-consola.jpg)
 
 
 Finalmente, le damos un nombre al proyecto y presionamos el botón crear.
-![Asignamos un nombre al proyecto]({{ site.url }}{{site.baseurl }}/resources/cpp-clase-1/nombre-proyecto.jpg)
+![Asignamos un nombre al proyecto]({{site.baseurl }}/resources/cpp-clase-1/nombre-proyecto.jpg)
 
 
 Una vez que se abra el editor, borra el contenido del archivo que aparece y pega el siguiente código:
@@ -109,7 +109,7 @@ La llave de cierre `}`, como dijimos anteriormente marca el final del bloque de 
 Una vez que pegues el código, presiona "Iniciar". Deberías ver una ventana de consola que muestra el mensaje "Hola, mundo!".
 
 
-![Ejecutamos el codigo]({{ site.url }}{{site.baseurl }}/resources/cpp-clase-1/ejecutar_codigo.gif)
+![Ejecutamos el codigo]({{site.baseurl }}/resources/cpp-clase-1/ejecutar_codigo.gif)
 
 
 #### Conclusión:
