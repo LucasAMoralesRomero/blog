@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C++: Breve introducción a la programación"
-date:   2024-05-07 09:24:05 -0300
+date:   2024-07-31 09:24:05 -0300
 categories: cpp
 ---
 
