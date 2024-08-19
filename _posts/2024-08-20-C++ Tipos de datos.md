@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "C++: Breve introducción a la programación"
-date:   2024-07-31 09:24:05 -0300
+title:  "C++: Breve introducción a la programación - Parte 2: Tipps de datos"
+date:   2024-08-20 09:24:05 -0300
 categories: cpp
 ---
 
