@@ -4,32 +4,33 @@ title:  "C++: Breve introducción a la programación - Parte 2: Tipps de datos"
 date:   2024-08-20 09:24:05 -0300
 categories: cpp
 ---
-
-
+ 
 ## Parte II: Variables, tipos de datos y operadores
 
-Buenas tardes, y bienvenidos a la segunda parte del tutorial de introduccion a la programación en C++, en el articulo de hoy veremos variables, tipos de datos y operadores.
-
-Comencemos con las variables
+Buenas tardes, y bienvenidos a la segunda parte del tutorial de introducción a la programación en C++. En el artículo de hoy, veremos variables, tipos de datos y operadores.
 
 ### Variables
 
-Las variables, es un espacio en memoria utilizado para almacenar informacion que luego utilizaremos, tal vez te resulte un poco extraño esto, pero puedes pensarlo como una caja. Una variable es una caja donde puedes guardar cosas (datos) para luego reuperarlas y utilizarlos.
-Es importante remarcar que en C++ las variables deben ser declaradas antes de ser usadas indicando el tipo de dato que va a contener, para eso,seguimos la siguiente  estructura `<tipo de dato><identificador>`, por ejemplo declaremos una variable que contenga el año en el que nos encontramos:
-
+Las variables son espacios en memoria utilizados para almacenar información que luego podemos recuperar y utilizar. Tal vez te resulte un poco extraño este concepto, pero puedes pensar en una variable como una caja. 
+Una variable es una caja donde puedes guardar cosas (datos) para luego recuperarlas y utilizarlas.
+Es importante remarcar que, en C++, las variables deben ser declaradas antes de ser usadas, indicando el tipo de dato que van a contener. Para eso, seguimos la siguiente estructura: `<tipo de dato> <identificador>`. Por ejemplo, si queremos declarar una variable que contenga el año en el que nos encontramos, haríamos lo siguiente:
 ```cpp
 int anio;
 ```
-la primer parte que llamamos tipo de dato, indica lo que contendra la variable y, por lo tanto determina el tamano en memoria que sera reservado, una vez declarado, podemos  asignarle un valor utilizando el signo igual `=`, sigamos con el ejemplo anterior del año en el que nos encontramos asignemosle el año:
-
+La primera parte, que llamamos tipo de dato, indica qué contendrá la variable y, por lo tanto, determina el tamaño en memoria que será reservado. 
+Ahora, que ya declaramos la variable, podemos "guardar" dentro un valor, para eso usaremos el signo de igualdad `=`.
+Sigamos con el ejemplo anterior y asignemos el año actual a la variable:
 ```cpp
-//utilizando el signo igual asignaremos el valor 2004 a la variable anio
-anio = 2004;
-```
-Las variables, pueden ser de varios tipos como enteros, flotantes, caracteres, cadenas de caracteres o booleanos.
+// Utilizando el signo igual asignaremos el valor 2024 a la variable anio
 
-Caracteres: char (también es un entero), wchar_t
-Enteros: short, int, long, long long
-Números en coma flotante: float, double, long double
-Booleanos: bool
-Vacío: void
+anio = 2024;
+```
+Las variables pueden ser de varios tipos, como enteros, flotantes, caracteres, cadenas de caracteres o booleanos, veamoslas con algunos ejemplos:
+
+#### Enteros:
+
+Los enteros, Los utilizaremos para almacenar numeros enteros, podemos hacer que estos enteros sean con o sin signo negativo, o que sean pequeños o grandes, esto nos permite ahorrar espacio en memoria, veamos un cuadro con los valores y, luego lo aplicaremos en el IDE:
+
+|Tipo de dato|Rango de numeros|Tamaño en memoria|
+|‐----------------------------------------------------------‐-----------------------------|
+|short int|-32767 a 32767|16 bits (2 bytes)|
