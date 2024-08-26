@@ -1,6 +1,6 @@
-3---
+---
 layout: post
-title:  "C++: Breve introducción a la programación - Parte 2: Tipps de datos"
+title:  "C++: Breve introducción a la programación - Parte 2: Tipos de datos"
 date:   2024-08-20 09:24:05 -0300
 categories: cpp
 ---
@@ -32,5 +32,5 @@ Las variables pueden ser de varios tipos, como enteros, flotantes, caracteres, c
 Los enteros, Los utilizaremos para almacenar numeros enteros, podemos hacer que estos enteros sean con o sin signo negativo, o que sean pequeños o grandes, esto nos permite ahorrar espacio en memoria, veamos un cuadro con los valores y, luego lo aplicaremos en el IDE:
 
 |Tipo de dato|Rango de numeros|Tamaño en memoria|
-|‐----------------------------------------------------------‐-----------------------------|
+|-----------------------------------------------|
 |short int|-32767 a 32767|16 bits (2 bytes)|
