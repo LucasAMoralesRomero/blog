@@ -26,15 +26,15 @@ Sigamos con el ejemplo anterior y asignemos el año actual a la variable:
 
 anio = 2024;
 ```
-Las variables pueden ser de varios tipos, como enteros, numeros no enteros (flotantes), caracteres o booleanos, veamoslas con algunos ejemplos:
+Las variables pueden ser de varios tipos, como enteros, números no enteros (flotantes), caracteres o booleanos, veamoslas con algunos ejemplos:
 
 ### Tipos de datos
 
 #### Enteros:
 
-Los enteros, Los utilizaremos para almacenar numeros enteros, podemos hacer que estos enteros sean con o sin signo negativo, o que sean pequeños o grandes, esto nos permite ahorrar espacio en memoria, veamos un cuadro con los valores y, luego lo aplicaremos en el IDE:
+Los enteros, Los utilizaremos para almacenar números enteros, podemos hacer que estos enteros sean con o sin signo negativo, o que sean pequeños o grandes, esto nos permite ahorrar espacio en memoria, veamos un cuadro con los valores y, luego lo aplicaremos en el IDE:
 
-|Tipo de dato|Rango de numeros que puede almacenar|Tamaño en memoria|
+|Tipo de dato|Rango de números que puede almacenar|Tamaño en memoria|
 |------------|------------------------------------|-----------------|
 |short int   |-32767 a 32767                      |16 bits (2 bytes)|
 |unsigned short int|0 a 65535                     |16 bits (2 bytes)|
@@ -45,16 +45,16 @@ Los enteros, Los utilizaremos para almacenar numeros enteros, podemos hacer que 
 
 Estos tipos de datos, aunque parecidos son diferentes, pero, ¿por que? ¡porque cada uno se puede usar para distintos casos!
 
-**Short int** puede utilizarse para almacenar numeros que seran positivos o negativos, pero que no seran muy grandes, como por ejemeplo la temperatura medida por un sensor de temperatura, mientras que **unsigned short int** puede ser utilizado para valores que no seran negativos, como por ejemplo los dias del año, la edad de una persona.
+**Short int** puede utilizarse para almacenar números que seran positivos o negativos, pero que no seran muy grandes, como por ejemeplo la temperatura medida por un sensor de temperatura, mientras que **unsigned short int** puede ser utilizado para valores que no seran negativos, como por ejemplo los dias del año, la edad de una persona.
 
-**Int** se puede utilizar para valores positivos o negativos que sean modeardamente grandes, como el balance de la cuenta de una persona, mientras que **unsigned int** puede utilizarse para valores que sean positivos y moderadamente grandes, como la distancia recorrida cuando andamos en bicicleta o la cantidad de puntos que hagamos en un juego.
+**Int** se puede utilizar para valores positivos o negativos que sean moderadamente grandes, como el balance de la cuenta de una persona, mientras que **unsigned int** puede utilizarse para valores que sean positivos y moderadamente grandes, como la distancia recorrida cuando andamos en bicicleta o la cantidad de puntos que hagamos en un juego.
 
-**Long int** se puede utilizar para numeros muy grandes, como por ejemplo el balance de una empresa o las deudas de un pais, mientras que **unsigned long int** se utiliza para almacenar datos muy grandes, pero que no pueden ser negativos, como las estrellas en la galaxia.
+**Long int** se puede utilizar para números muy grandes, como por ejemplo el balance de una empresa o las deudas de un pais, mientras que **unsigned long int** se utiliza para almacenar datos muy grandes, pero que no pueden ser negativos, como las estrellas en la galaxia.
 
-#### Numeros no enteros:
+#### Números no enteros:
 
-Los numeros no enteros, o flotantes son los numeros que poseen una parte fraccional (como por ejemplo el peso de una porcion de queso), existen dos tipos los **float** y los **double**, ¿la diferencia entre ellos? ¡la presicion!, por ejemplo con **float** podemos almacenar la altura de un edificio o la temperatura en el interior de una casa.
-**Double** posee una mayor presicion, lo podemos usar para almacenar calculos financieros, o la distancia recorrida por una sonda espacial
+Los números no enteros, o flotantes son los números que poseen una parte fraccional (como por ejemplo el peso de una porcion de queso), existen dos tipos los **float** y los **double**, ¿la diferencia entre ellos? ¡la presición!, por ejemplo con **float** podemos almacenar la altura de un edificio o la temperatura en el interior de una casa.
+**Double** posee una mayor presición, lo podemos usar para almacenar calculos financieros, o la distancia recorrida por una sonda espacial
 
 | Tipo de dato |            Rango de números que puede almacenar                 | Tamaño en memoria |
 |--------------|-----------------------------------------------------------------|-------------------|
@@ -63,8 +63,65 @@ Los numeros no enteros, o flotantes son los numeros que poseen una parte fraccio
 
 #### Caracteres (char):
 
-Los **caracteres** almacenan dentro de una variable un caracter de la labla ASCII, en memoria va a ocupar un byte, por lo que va a poder almacenar una letra, un numero o un simblolo.
+Los **caracteres** almacenan dentro de una variable un caracter de la tabla ASCII, en memoria va a ocupar un byte, por lo que va a poder almacenar una letra, un numero o un símbolo.
 
 #### Booleanos:
 
-Los **booleanos** almacenan dos valores `verdadero` o `falso` 
+Los **booleanos** almacenan dos valores `verdadero` o `falso`, lo utilizaremos com banderas para poder controlar el flujo de nuestro programa, puedes imaginarlo como un interruptor, si se establece en `0` o `false` podemos hacer que una parte de nuestro codigo no se ejecute, en cambio si lo establecemos en `1` o en `true` esa porción de código si se ejecutará.
+
+veamos un ejemplo para demostrarlo:
+
+```cpp
+//creamos un booleano llamado caminar
+bool caminata;
+
+//lo establecemos en verdadero
+caminata = true;
+
+//si caminar es verdadero, mostramos en pantalla que podemos salir a caminar, sino mostramos que no
+if (caminata == true) {
+    cout << "Vamos a salir a caminar, yeah!"
+}
+else {
+    cout << "No vamos a salir a caminar =("
+}
+
+```
+### Operadores
+
+Llegamos a la ultima parte de este articulo (lo se, se hizo un poco mas complejo este articulo, pero creeme que valdra la pena para establecer un buen cimiento para los proximos articulos). Dicho lo anterior, avancemos! =D
+
+En C++, los `operadores` nos permiten, como dice la palabra realizar operaciones con las variables de nuestro programa; podemos realizar calculos matemáticos, comparar valores o combinar condiciones.
+
+Veamos los mas importantes **operadores aritméticos, operadores de comparacón y operadores lógicos**.
+
+#### Operadores aritméticos:
+
+Los `operadores aritméticos` son aquellos que nos permiten realizar calculos matemáticos como la **suma, resta, multiplicación, división y módulo (o resto)**
+
+
+|Operador    |Descripción                         |Ejemplo de uso (x = 5, y = 4)       |
+|------------|------------------------------------|------------------------------------|
+|      +     |                Suma                |x + y // la salida sera:  5 + 4 = 9 |
+|      -     |                Resta               |x - y // la salida sera: 5 - 4 = 1  |
+|      *     |                Multiplicación      |x * y // la salida sera: 5 * 4 = 20 |
+|      /     |          División entera           |x / y // la salida sera: 5 / 4 = 1  |
+|      %     |                Módulo (o resto)    |x % y // la salida sera: 5 % 4 = 1  |
+
+Tal vez sea un poco trivial explicar todo el cuadro, pero, nos centraremos en los ultimos dos operadores que nos dio el mismo resultado, pero ¿por que?
+
+Eso se debe a que el primer operador, el de división entera nos devuelve el rsultado de la division entera, en este caso 5 dividido 4 es uno. Ahora, el operador de módulo nos devuelve el rest de la division, en este caso 5 dividido 4 nos da uno, y nos queda 1 de resto.
+
+#### Operadores de asignación
+
+Los `operadores de asignación` nos permiten guardar un valor en una variable, el mas comun de ellos es el de igualdad `=`, el que ya vimos anteriormente para almacenar un valor, pero tenemos otros que nos permiten realizar una operacion matematica y luego guardarlo, veamoslo en un cuadro:
+
+|Operador    |Descripción                         |Ejemplo de uso (x = 5)              |
+|------------|------------------------------------|------------------------------------|
+|      =     |      Asignación simple             |x = 5 // la salida sera:  5         |
+|      +=    |      Suma y asigación              |x += 1 // la salida sera:  6        |
+|      -=    |      Resta y asignación            |x -= 1 // la salida sera:  4        |
+|      *=    |      Multiplicación y asignación   |x *= 2 // la salida sera:  10       |
+|      /=    |      División y asignación         |x /= 2 // la salida sera:  2        |
+|      %=    |      Módulo y asignación           |x %= 4 // la salida sera:  1        |
+
