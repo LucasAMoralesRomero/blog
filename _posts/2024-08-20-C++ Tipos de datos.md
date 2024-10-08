@@ -110,7 +110,7 @@ Los `operadores aritméticos` son aquellos que nos permiten realizar calculos ma
 
 Tal vez sea un poco trivial explicar todo el cuadro, pero, nos centraremos en los ultimos dos operadores que nos dio el mismo resultado, pero ¿por que?
 
-Eso se debe a que el primer operador, el de división entera nos devuelve el rsultado de la division entera, en este caso 5 dividido 4 es uno. Ahora, el operador de módulo nos devuelve el rest de la division, en este caso 5 dividido 4 nos da uno, y nos queda 1 de resto.
+Eso se debe a que el primer operador, el de división entera nos devuelve el rsultado de la division entera, en este caso 5 dividido 4 es uno. Ahora, el operador de módulo nos devuelve el resto de la division, en este caso 5 dividido 4 nos da uno, y nos queda 1 de resto.
 
 #### Operadores de asignación
 
@@ -124,4 +124,86 @@ Los `operadores de asignación` nos permiten guardar un valor en una variable, e
 |      *=    |      Multiplicación y asignación   |x *= 2 // la salida sera:  10       |
 |      /=    |      División y asignación         |x /= 2 // la salida sera:  2        |
 |      %=    |      Módulo y asignación           |x %= 4 // la salida sera:  1        |
+
+#### Operadores lógicos
+
+Los `operadores lógicos` son utilizados para comprobar si una variable es verdadera o falsa, con ellos podemos comparar una o multiples variables, veamoslos mas a detalle:
+
+**Operador && (and)**
+
+El operador and, nos permite evaluar dos variables, y en caso de que ambas sean verdaderas, nos da true, si una de ellas es falsa o si ambas lo son, nos dara falso.
+Veamoslo con un ejemplo:
+
+```cpp
+
+//creamos un booleano, llamada dia
+bool dia;
+//creamnos un booleano llamado zapatillas
+bool zapatillas;
+
+//establecemos en verdadero el dia 
+dia = true;
+
+//hacemos lo mismo con zapatillas
+zapatillas = true;
+
+
+
+//si es de dia y tenemos zapatillas podemos salir a caminar, sino no
+if (dia == true && zapatillas == true) {
+    cout << "Salgamos a camiran en este hermoso dia =)"
+}
+else {
+    cout << "Si no es de dia y no tenemos zapatillas no podremos salir a caminar =("
+}
+
+```
+
+**Operador &#124;&#124; (or)**
+
+El operador or al igual que el and nos permite evaluar dos variables, pero en este caso sera verdadero siempre que una de las dos condiciones sea verdadera, en caso de que ambas sean falsas nos dara falso:
+
+```cpp
+//crearemos un booleano llamado tarea
+bool tarea;
+
+//crearemos un booleano llamado permiso de salir
+bool permisoDeSalir;
+
+//tareas sera falso (porque no las hiciste)
+tareas = false;
+
+//permisoDeSalir sera verdadero porque tus padres te dieron permiso para salir hot
+permisoDeSalir = true;
+
+//ahora con un if y un OR evaluamos si tareas es erdadero o si permisoDeSalir lo es (cono uno de los dos es verdadero, podreas salir!) 
+
+if (tarea == true || permisoDeSalir == true) {
+    cout << "Puedes salir con tus amigos! =D" << endl;
+} else {
+    cout << "No puedes salir hasta que termines la tarea o te den permiso." << endl;
+}
+
+```
+
+**Operador ! (not)**
+
+El operador not nos sirve para invertir un valor, o para evaluar hasta que algo no sea verdad, este operador logico sera nuestro mejor amigo a la hora de evaluar los bucles en los juegos que hagamos, pero no nos adelantemos y vemos un pequeño ejemplo:
+
+```cpp
+//creamos un booleano llamado cinturón puesto
+bool cinturonPuesto;
+
+//establecemos en false porque el conducto no se puso el conductor
+cinturonPuesto = false;
+
+//evaluamos si el conduicto se puso el sinturon, si se lo puso nos vamos, sino no salimos
+
+if (!cinturónPuesto) {
+    cout << "¡Si no te pones el sinturón no podes manejar!" << endl;
+} else {
+    cout << "¡Bien! Te pusiste el sinturón, ¿a donde vamos?" << endl;
+}
+
+```
 
