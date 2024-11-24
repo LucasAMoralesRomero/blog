@@ -194,16 +194,22 @@ El operador not nos sirve para invertir un valor, o para evaluar hasta que algo 
 //creamos un booleano llamado cinturón puesto
 bool cinturonPuesto;
 
-//establecemos en false porque el conducto no se puso el conductor
+//establecemos en false porque el conducto no se puso el cinturon
 cinturonPuesto = false;
 
-//evaluamos si el conduicto se puso el sinturon, si se lo puso nos vamos, sino no salimos
+//evaluamos si el conductor se puso el cinturon, si se lo puso nos vamos, sino no salimos
 
 if (!cinturónPuesto) {
-    cout << "¡Si no te pones el sinturón no podes manejar!" << endl;
+    cout << "¡Si no te pones el cinturón no podes manejar!" << endl;
 } else {
-    cout << "¡Bien! Te pusiste el sinturón, ¿a donde vamos?" << endl;
+    cout << "¡Bien! Te pusiste el cinturón, ¿a donde vamos?" << endl;
 }
 
 ```
+
+### Proyecto del dia: Piedra, papel o Tijeras
+
+Llegamos al final del articulo, por lo que haremos un mini proyecto de un piedra, papel o tijeras.
+El jugador elegirá que utilizar, y, la computadora tambien "elegira", para ello utilizaremos una funcion que nos da un numero aleatorio (por lo que siempre que juguemos la computadora elegira un elemento distinto).
+¡Manos a la obra!
 
