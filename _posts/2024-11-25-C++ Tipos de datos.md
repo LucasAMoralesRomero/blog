@@ -298,7 +298,7 @@ Este número se guarda en eleccionComputadora, y mostramos su elección en la co
 Finalmente, con una estructura if anidada, comparamos las elecciones y mostramos el resultado: si hay un ganador o si el juego terminó en empate.
 
 # Conclusión
-Fue largo el articulo de hoy, pero valio la pena, porque con el vimos los conceptos de **variables**, **tops de datos** y **operadores**, y finalizamos
+Fue largo el articulo de hoy, pero valio la pena, porque con el vimos los conceptos de **variables**, **tipos de datos** y **operadores**, y finalizamos
 creadon nuestro primer juego: un Piedra Papel o Tijeras.
 
 En mi [repositorio de GitHub][repo] te dejo el codigo del juego que desarrollamos para que lo descargue y lo modifiquies, y, si gustas puedes hacer una modificacion para mejorarlo, yo con gusto la revisare y la agregare.
