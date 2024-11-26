@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C++: Breve introducción a la programación - Parte 2: Tipos de datos"
-date:   2024-08-20 09:24:05 -0300
+date:   2024-11-25 09:24:05 -0300
 categories: cpp
 ---
  
@@ -199,7 +199,7 @@ cinturonPuesto = false;
 
 //evaluamos si el conductor se puso el cinturon, si se lo puso nos vamos, sino no salimos
 
-if (!cinturónPuesto) {
+if (!cinturonPuesto) {
     cout << "¡Si no te pones el cinturón no podes manejar!" << endl;
 } else {
     cout << "¡Bien! Te pusiste el cinturón, ¿a donde vamos?" << endl;
@@ -209,11 +209,14 @@ if (!cinturónPuesto) {
 
 ### Proyecto del dia: Piedra, papel o Tijeras
 
-Llegamos al final del articulo, por lo que haremos un mini proyecto de un piedra, papel o tijeras.
-El jugador elegirá que utilizar, y, la computadora tambien "elegira",
-para ello utilizaremos una funcion que nos da un numero aleatorio
-(por lo que siempre que juguemos la computadora elegira un elemento distinto).
+Llegamos al final del artículo, y para poner en práctica lo visto hoy, haremos un mini proyecto: un juego de Piedra, Papel o Tijeras.
+
+En el juego, elegiremos uno de los tres elementos (Piedra, Papel o Tijeras), y acto seguido, el programa seleccionará una opción de forma aleatoria.
+
+Finalmente, el programa comparará las elecciones y nos indicará si hay un ganador o si el resultado es un empate.
+
 ¡Manos a la obra!
+
 
 
 ```cpp
@@ -273,8 +276,35 @@ int main() {
 		return 0;
 }
 ```
-¿Demasiado codigo para esta altura del post, verdad?, analicemos un poco este juego :)
 
-Al inicio, importamos dos librerias: `ctime`, la que usaremos para traer el tiempo actual de la pc para usar como semilla de 
-generacion de numeros "aleatorios" en la funcion srand(), que esta en la segunda libreria que importamos `cstdlib`, esta tiene dos 
-funciones que utilizaremos srand(), que nos genera un numero aleatorio cada vez que lo llamamos (para eso usamos la funcion time)
+¿Demasiado código para esta altura del post, verdad? :) No te preocupes, analicemos juntos este juego paso a paso.
+
+Al inicio del programa, importamos dos bibliotecas importantes:
+
+* ctime: La utilizamos para obtener el tiempo actual de la computadora, que sirve como semilla para generar números "aleatorios".
+* cstdlib: Incluye las funciones `srand()` y `rand()`, que nos permiten inicializar el generador de números aleatorios y generar valores diferentes cada vez que ejecutamos el programa.
+
+Luego declaramos dos variables:
+
+* eleccionJugador: Donde almacenaremos la elección del jugador.
+* eleccionComputadora: Que guardará la elección generada por el programa.
+
+A continuación, presentamos un menú básico con las opciones disponibles usando cout. Después, con cin, guardamos la elección 
+del jugador y mostramos su selección en la consola.
+
+Acto seguido, inicializamos la semilla de números aleatorios con srand(time(0)) y usamos rand() para generar un número aleatorio entre 1 y 3. 
+Este número se guarda en eleccionComputadora, y mostramos su elección en la consola, igual que hicimos con el jugador.
+
+Finalmente, con una estructura if anidada, comparamos las elecciones y mostramos el resultado: si hay un ganador o si el juego terminó en empate.
+
+# Conclusión
+Fue largo el articulo de hoy, pero valio la pena, porque con el vimos los conceptos de **variables**, **tops de datos** y **operadores**, y finalizamos
+creadon nuestro primer juego: un Piedra Papel o Tijeras.
+
+En mi [repositorio de GitHub][repo] te dejo el codigo del juego que desarrollamos para que lo descargue y lo modifiquies, y, si gustas puedes hacer una modificacion para mejorarlo, yo con gusto la revisare y la agregare.
+
+En el proximo articulo daremos un  paso mas alla, viendo **estructuras de control** que nos permitiran crear programas mas complejos.
+
+¡Nos vemos en el siguiente post!
+
+[repo]: https://github.com/LucasAMoralesRomero/ejemplos-blog/blob/main/01-piedra-papel-tijera/piedra-papel-tijera.cpp
