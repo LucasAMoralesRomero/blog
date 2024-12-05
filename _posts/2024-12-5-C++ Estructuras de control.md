@@ -34,3 +34,11 @@ else (tercer-condicion-a-evaluar)
 {
 codigo a ejecutar si la primer y segunda condicion son falsas}
 ```
+Al momento de ingresar a la estructura, el programa evalúa si la condición es verdadera o falsa, en caso de ser verdadera el, programa ejecutará el código dentro de las llaves, en caso de que no sea verdadero no se ejecutará.
+
+#### Operador ternario
+
+El operador ternario, nos permite realizar una evaluación de una expresión (puedes pensarlo como una forma más corta de escribir un **if**.
+
+La estructura de un operador ternario es la siguiente:
+
