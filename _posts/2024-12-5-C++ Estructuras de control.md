@@ -42,3 +42,26 @@ El operador ternario, nos permite realizar una evaluación de una expresión (pu
 
 La estructura de un operador ternario es la siguiente:
 
+```cpp
+variable = (conficion) ?
+valor-si-es-verdadero :
+valor-si-es-falso;
+```
+tal vez resulte un poco difícil de entender, pero es bastante simple. Utilizamos una variable que comparamos y tenemos dos posibles salidas. Un ejemplo simple sería saber si aprobamos o no una materia:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int notas = 7 + 5 + 9;
+notas = notas / 3;
+//veamos si aprobamos
+
+cout << ((notas >= 7) ?
+"Aprobado\n" : "Desaprobado\n");
+
+    return 0;
+}
+```
