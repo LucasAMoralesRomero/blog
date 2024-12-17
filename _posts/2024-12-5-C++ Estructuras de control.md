@@ -47,6 +47,7 @@ variable = (conficion) ?
 valor-si-es-verdadero :
 valor-si-es-falso;
 ```
+
 tal vez resulte un poco difícil de entender, pero es bastante simple. Utilizamos una variable que comparamos y tenemos dos posibles salidas. Un ejemplo simple sería saber si aprobamos o no una materia:
 
 ```cpp
@@ -65,3 +66,19 @@ cout << ((notas >= 7) ?
     return 0;
 }
 ```
+### Bucles
+Los `bucles` nos permiten ejecutar tantas veces como sea necesario una porcion de codigo, siempre y cuando una condicion se cumpla.
+
+#### Bucle While
+Llegamos a uno de nuestros "mejores amigos", el buen bucle while, este nos permite ejecutar el codigo que encerremos dentro mientras la consicion sea verdadera.
+ Seguramente te estes preguntando por que es nuestro mejor amigo, bueno eso se debe a que 
+ usaremos este bucle para crear el `game loop` (el bucle donde alojaremos la logica del juego y el que usaremos para salir del mismo)
+ 
+ La estructura basica del while es la siguiente:
+
+ ```cpp
+ while ( condicion )
+    {
+        codigo-a-ejecutar;
+    }
+ ```
