@@ -82,3 +82,31 @@ Llegamos a uno de nuestros "mejores amigos", el buen bucle while, este nos permi
         codigo-a-ejecutar;
     }
  ```
+
+Ejemplo: Contador simple
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int contador = 1;
+
+    while (contador <= 5) {
+        cout << "Iteración: " << contador << endl;
+        contador++;
+    }
+
+    return 0;
+}
+```
+
+
+En este caso:
+
+1. El programa empieza con la variable contador igual a 1.
+
+
+2. Mientras la condición contador <= 5 sea verdadera, se ejecuta el código dentro del bloque.
+
+
+3. En cada iteración, se incrementa el valor de contador con contador++.
