@@ -110,3 +110,85 @@ En este caso:
 
 
 3. En cada iteración, se incrementa el valor de contador con contador++.
+
+ Continuemos con los bucles y luego pasemos al mini proyecto para cerrar el post.
+
+## Bucle do-while 
+
+El bucle do-while es similar al while, pero garantiza que el código dentro del bloque se ejecute al menos una vez, incluso si la condición inicial no se cumple.
+
+Estructura básica del do-while:
+
+```cpp
+do 
+{ // Código a ejecutar al menos una vez } 
+while (condicion); 
+
+```
+
+Ejemplo: Solicitar un número positivo
+
+```cpp
+
+
+#include <iostream> 
+using namespace std; 
+int main() { 
+int numero; 
+do 
+{ cout << "Ingresa un número mayor a 0: "; cin >> numero; } 
+while (numero <= 0); 
+cout << "¡Número válido ingresado: " << numero << "!" << endl; return 0; } 
+
+```
+
+En este caso:
+
+El programa siempre pedirá al usuario ingresar un número al menos una vez. Si el número ingresado es menor o igual a 0, el bucle se repetirá hasta que se ingrese un valor válido. 
+
+## Bucle for 
+
+El bucle for es ideal cuando sabemos de antemano cuántas veces queremos que se ejecute un bloque de código. Es comúnmente usado para recorrer rangos o colecciones.
+
+Estructura básica del for:
+```cpp
+for (inicialización; condición; incremento) 
+{ // Código a ejecutar mientras la condición sea verdadera } 
+```
+
+Ejemplo: Imprimir los primeros 10 números
+
+```cpp
+#include <iostream> 
+using namespace std; 
+int main() { 
+for (int i = 1; i <= 10; i++) 
+{ cout << "Número: " << i << endl; } 
+return 0; } 
+```
+
+En este caso:
+
+Inicialización: int i = 1 establece el valor inicial de la variable i. Condición: i <= 10 verifica si el bucle debe continuar. Incremento: i++ incrementa el valor de i después de cada iteración. 
+
+## break y continue 
+
+A veces necesitamos interrumpir un bucle o saltar a la siguiente iteración antes de que termine el bloque completo.
+
+break: Detiene el bucle inmediatamente y sale de él. continue: Salta al final del bucle y comienza la siguiente iteración. 
+
+Ejemplo con break:
+
+#include <iostream> using namespace std; int main() { for (int i = 1; i <= 10; i++) { if (i == 5) { cout << "Se detiene en el número: " << i << endl; break; } cout << "Número: " << i << endl; } return 0; } 
+
+Ejemplo con continue:
+
+#include <iostream> using namespace std; int main() { for (int i = 1; i <= 10; i++) { if (i % 2 == 0) { continue; // Salta los números pares } cout << "Número impar: " << i << endl; } return 0; } 
+
+## Mini Proyecto: Juego de Adivina el Número 
+
+En este mini proyecto, pondremos en práctica las condicionales y los bucles que hemos aprendido. El programa generará un número aleatorio entre 1 y 100, y el jugador tendrá un número limitado de intentos para adivinarlo.
+
+¿Qué queremos lograr?
+
+Generar un número aleatorio entre 1 y 100. Permitir al jugador adivinar con un máximo de 5 intentos. Dar pistas indicando si el número es "mayor" o "menor" al intento. Mostrar un mensaje final indicando si ganó o perdió. 
