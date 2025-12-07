@@ -7,19 +7,19 @@ categories: HTML
 
 #### Buenas tardes y bienvenido a un nuevo post, donde veremos una curiosa (aunque muy util) forma de poner un Favicon a una página web
 
-Si has dado una vuelta por el blog, seguramente he has percatado de que no posee un icono y, que solo se muestra un icono genérico.
+Si has dado una vuelta por el blog, seguramente te has percatado de que no posee un icono y, que solo se muestra uno genérico.
 
 ![El blog sin Favicon]({{site.baseurl }}/resources/html-emoji-favicon/blog-no-icon.jpg)
 
-Esto, que tal vez algunas personas ven como algo trivial es algo sumamente importante de cara al visitante nuestra web, ya que ayuda a que nos distinga entre todas las paginas que ve al navegar por la web.
+Esto, que tal vez algunas personas ven como algo trivial es algo sumamente importante de cara al visitante nuestra web, ya que ayuda a que nos distinga entre todas las paginas que ve al navegar.
 
 Si bien lo ideal es usar un **archivo .ico**, tambien podemos usar un modesto **emoji** como archivo **Favicon**.
 
-Para este ejemplo, tabajaremos con esta breve historia basada en el **"Capitán Proton"**:
+Para este ejemplo, trabajaremos con esta breve historia basada en el **"Capitán Proton"**:
 
 ![La historia sin el favicon]({{site.baseurl }}/resources/html-emoji-favicon/capitan-proton-no-icon.jpg)
 
-Si bien se ve bien, hay algo que nos hace ruido, algo falta... algo como el **Favicon**, asi que mano al código.
+Si bien se ve bien, hay algo que nos hace ruido, algo falta... algo como el **Favicon**, asi que manos al código.
 
 Si vemos el **código HTML** a continuación, notaremos que falta el enlace en el **header** para mostrar el icono
 
@@ -41,7 +41,7 @@ Si vemos el **código HTML** a continuación, notaremos que falta el enlace en e
   <main>
     <p>Entre relámpagos cósmicos y un zumbido que hacía temblar las estrellas, el <strong>Rocket Ship</strong> del intrépido <strong>Capitán Proton</strong> emergió del espacio. Los indicadores centelleaban en rojo, y el <strong>humo eléctrico de sus cohetes</strong> llenaba la cabina. A su lado, el inseparable <strong>Buster Kincaid</strong> limpiaba el sudor de su frente con un pañuelo grasiento. “Capitán, esa señal… no es de esta galaxia”, dijo con voz temblorosa. Proton, con la mandíbula firme y la mirada perdida en el infinito, respondió: “Entonces, Buster, acabamos de cruzar la frontera del conocimiento humano”.</p>
 ```
-Ahora, podemos usar este **tag** pata poder utilizar un **emoji** como **favicon**:
+Ahora, podemos usar este **tag** para poder utilizar un **emoji** como **favicon**:
 
 ```html
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😊</text></svg>">
