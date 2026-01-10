@@ -21,16 +21,21 @@
 title: "Lucas Morales' Blog"
 email: 
 description: "Un blog sobre mis proyectos y aprendizajes."
-domain: "lucasamoralesromero.github.io"
+domain: "https://lucasamoralesromero.github.io"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "lucasamoralesromero.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lucasamoralesromero.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: morales_agustin
 github_username: LucasAMoralesRomero
+google_analytics: G-MFQ0RP3Z7P # Replace with your Google Analytics tracking ID
+
+
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
